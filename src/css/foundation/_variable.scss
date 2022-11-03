@@ -1,0 +1,36 @@
+/*---------- Variables ----------*/
+:root {
+    //color
+    --main-color: #555;
+    --sub-color: #555;
+    --user-red-color: orangered;
+    --user-blue-color: dodgerblue;
+    --user-green-color: mediumspringgreen;
+    --user-yellow-color: #fff579;
+
+    //font
+    --main-font: "", "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;    
+
+    //header
+    --header-color: transparent;
+    --header-font-color: currentcolor;
+
+    //footer
+    --footer-color: transparent;
+    --footer-font-color: currentcolor;
+
+
+}
+/*---------- ThemeModeColor ----------*/
+//light-mode-color
+:root {
+    --font-color: #555;
+    --link-color: #555;
+    --background-color: white;
+}
+//dark-mode-color
+[data-theme="dark"] {
+    --font-color: #eee;
+    --link-color: #eee;
+    --background-color: #333;
+}

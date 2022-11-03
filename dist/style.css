@@ -1,0 +1,32 @@
+/*
+    Theme Name: 39boubiroku
+    Theme URI: https://39boubiroku.pink/
+    Description: 大切なことの忘備録"39boubiroku"のシンプルでスタイリッシュなオリジナルテーマです。
+    Version: 2.2.1
+    Author: てづっぴ(美少女)
+    Author URI: https://xn--j9jdc2d.jp/
+    Tags: simple,stylish,fashionable,monochrome,lightmode,darkmode,
+*/
+/*
+    最終更新日 22/11/04
+    v 2.0.0 39boubiroku テーマ 2.0.0を公開
+    v 2.0.1 公開にあたりスタイルなどの修正
+    v 2.0.2 トップページで選択しているカテゴリーをローカルストレージに保存し、再度開いたときにそのカテゴリーをアクティブにする機能を追加
+    v 2.0.3 各種プラグインのスタイルを追加 プラグインのスタイルを必要なページでのみインラインで読み込むように変更 モバイル版でのスタイルを修正
+    v 2.0.4 投稿ページでモバイル版でもトップに戻るボタンを追加 ユーザーIDが特定できないようにセキュリティ対策を追加
+    v 2.0.5 トップページの画像遅延機能を実装 
+    v 2.0.6 シングルページの画像遅延機能を実装 フェードアップで表示させる処理の追加
+    v 2.0.7 Singular.phpで固定ページの出力分岐を作成 固定ページにて<?php the_content(); ?>が機能しない不具合を修正 コンテンツのpadding-bottomを修正
+    v 2.0.8 Singularページのモバイルでのスタイルを修正
+    v 2.1.0 Singularページにフッターを追加 それに伴ったスタイルを追加
+    v 2.1.1 フォントの代替えフォント、font-displayを指定
+    v 2.1.2 CategoryAndMoreのリンクエラーを解消
+    v 2.1.3 ヘッダー内<ul>構成を修正（ul>h1をul>li>h1に修正）
+    v 2.1.4 フォントのプリロードを記述
+    v 2.1.5 liquid-speech-balloonのアバター名を表示しないCSSを追加
+    v 2.1.6 liquid-speech-balloonの吹き出しのスタイルを変更
+    v 2.1.7 PostSnippets用のスタイルを追加
+    v 2.1.8 投稿ページのスタイル崩れを修正
+    v 2.2.0 プラグインWP-word-countの表示時間の不具合を修正
+    v 2.2.1 Singularページのフッター スタイルを修正
+*/

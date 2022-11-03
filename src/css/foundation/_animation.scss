@@ -1,0 +1,15 @@
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(5%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+.a-fadeUp {
+    -webkit-animation: fadeUp .5s .2s both;
+    animation: fadeUp .5s .2s both;
+}

@@ -1,0 +1,194 @@
+/*---------- Wrapper ----------*/
+.l-wrapper {
+    #home &, #archive &, #search & {
+        transition: .3s;
+    }
+}
+/*---------- Loader ----------*/
+.l-loader {
+    background-color: var(--background-color);
+    transition:  z-index 1s, visibility .8s, opacity .5s;
+    &.is-loaded {
+        z-index: -1;
+        visibility: hidden;
+        opacity: 0;
+    }
+    &__progress {
+        .is-loaded & {
+            visibility: hidden;
+            opacity: 0;
+        }
+        &-bar {
+            background-color: var(--font-color);
+            transition: width .5s;
+        }
+    }
+}
+/*---------- Header ----------*/
+.l-header {
+    #home & {
+        top: 0;
+        transform: none;
+        @media screen and (min-width: 600px) {
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        @media screen and (max-width: 599px) {
+            position: absolute;
+            top: 0;
+        }
+    }
+    #singular & {
+        position: absolute;
+        top: 0;
+        transform: none;
+        visibility: hidden;
+        padding: .5rem 0;
+        background-color: var(--background-color);
+        opacity: 0;
+        transition: transform .5s, visibility .5s, background-color .3s, color .3s, opacity .5s;
+        &.active {
+            visibility: visible;
+            opacity: 1;
+        }
+        &.switch {
+            @media screen and (min-width: 600px) {
+                top: 50%;
+                transform: translateY(-50%);
+                background-color: transparent;
+                transition: transform .5s, visibility .5s, background-color 0s, opacity .5s,!important;
+            }
+        }
+    }
+    #archive &, #search & {
+        position: absolute;
+        top: 0;
+        transform: none;
+        transition: transform .5s, visibility .5s, background-color .3s;
+        @media screen and (min-width: 600px) {
+            margin-top: .5rem;
+        }
+        &.switch {
+            @media screen and (min-width: 600px) {
+                top: 50%;
+                transform: translateY(-50%);
+                background-color: transparent;
+                transition: transform .5s, visibility .5s, background-color 0s, opacity .5s,!important;
+            }
+        }
+    }
+    &__inner {
+        max-width: 1280px;
+    }
+}
+/*---------- Container ----------*/
+.l-container {
+
+}
+/*---------- Main ----------*/
+.l-main {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    #singular & {
+        scroll-behavior: smooth;
+    }
+    &__inner {
+        #home &, #archive &, #search & {
+            max-width: 1280px;
+        }
+        }
+}
+/*---------- Section ----------*/
+.l-section {
+    #home & {
+        position: absolute;
+        visibility: hidden;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        @media screen and (max-width: 599px) {
+            overflow-x: scroll;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+        &.active {
+            visibility: visible;
+            opacity: 1;
+            animation: fadeUp .5s both;
+        }
+        &__inner {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2%;
+            align-content: space-between;
+            width: 100%;
+            height: 100%;
+            @media screen and (max-width: 599px) {
+                flex-direction: column;
+                gap: 1%;
+                justify-content: space-between;
+                align-content: flex-start;
+                width: 400%;
+                padding: 1.5% 2%;
+            }
+        }    
+    }
+    #archive &, #search & {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        @media screen and (max-width: 599px) {
+            overflow-x: scroll;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+        &__inner {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2%;
+            align-content: space-between;
+            width: 100%;
+            height: 100%;
+            @media screen and (max-width: 599px) {
+                flex-direction: column;
+                gap: 1%;
+                justify-content: space-between;
+                align-content: flex-start;
+                width: 400%;
+                padding: 1.5% 2%;
+            }
+        }    
+
+    }
+}
+/*---------- Menu ----------*/
+.l-menu {
+    transition: visibility 1s, background-color .3s, color .3s, opacity 1s;
+    &.active {
+        visibility: visible;
+        opacity: 1;
+    }
+    &__inner {
+        max-width: 1280px;
+    }
+}
+/*---------- Footer ----------*/
+.l-footer {
+    &__inner {
+    }
+    &__link {
+    }
+    &__copy {
+    }
+
+}
